@@ -30,6 +30,9 @@ e nenhum token na resposta (status 401 ou 403).
 - API: status 200 OK com a mensagem "Login realizado com sucesso" e com
   `accessToken` e `refreshToken` na resposta.
 - Interface: o usuário entra no sistema normalmente, sem verificar a conta.
+- Exemplo: o check-in 33307ed3-b831-4036-bd75-046ef9794858, criado pelo
+  testador pela interface, tem `status: APPROVED`, `points: 10` e
+  `createdAt` igual a `updatedAt`.
 
 ## Análise de causa raiz (hipótese)
 
