@@ -7,12 +7,13 @@
 - **Ambiente:** localhost, Docker Compose, NaSalinha (Node.js + PostgreSQL)
 - **Data:** 06/11/2026
 - **Severidade:** Maior (regra de negócio não aplicada)
+- **Status:** Aberto
 
 ## Passos para reproduzir
 
-1. Em http://localhost:3000, entrar como Pedro e fazer um check-in com a foto A.
-2. Sair e entrar como Maria.
-3. Fazer um check-in com a mesma foto A.
+1. Em http://localhost:3000, entrar com um usuário (no print, a conta naonny).
+2. Fazer um check-in com a foto A.
+3. Fazer outro check-in com a mesma foto A.
 
 ## Resultado esperado
 
@@ -21,19 +22,29 @@ foto repetidas vezes.
 
 ## Resultado atual
 
-O check-in com a foto repetida é aceito normalmente.
+O check-in com a foto repetida é aceito normalmente e aparece na lista junto
+com o primeiro.
 
 ## Consequência
 
 Um usuário pode reaproveitar a mesma imagem para pontuar, sem comprovar uma
 nova atividade. Isso enfraquece a validação de mídia e distorce o ranking.
 
-## Análise de causa raiz (hipótese)
+## Análise técnica
 
-O upload não parece comparar a imagem com envios anteriores (por exemplo, por
-hash do arquivo). Hipótese a confirmar no código do serviço de check-in, que
-não foi lido nesta auditoria.
+Pelo comportamento observado, o upload é aceito sem comparar a imagem com os
+envios anteriores. A correção deve rejeitar o arquivo repetido, por exemplo
+comparando o hash da imagem com o das fotos já enviadas, e devolver uma
+mensagem de erro clara.
+
+## Observações
+
+- O mesmo comportamento apareceu na exploração (06/11, linha 13), com usuários
+  diferentes: a foto A enviada por um usuário foi aceita de novo no check-in de
+  outro.
+- Nesse mesmo teste, os dois check-ins foram feitos com um minuto de diferença,
+  o que também viola o intervalo mínimo de 24 horas (BUG-PTS-02).
 
 ## Evidências
 
-- ![Mesma foto aceita em check-ins repetidos](../evidencias/CHK-02-foto-repetida.png)
+- ![Check-ins com a mesma foto aceitos](../evidencias/CHK-02-foto-repetida.png)

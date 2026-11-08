@@ -7,6 +7,7 @@
 - **Ambiente:** localhost, Docker Compose, NaSalinha (Node.js + PostgreSQL)
 - **Data:** 07/11/2026
 - **Severidade:** Maior (erro de lógica que distorce o ranking)
+- **Status:** Aberto
 
 ## Passos para reproduzir (API)
 
@@ -29,8 +30,9 @@
 
 ## Resultado esperado
 
-Os pontos do check-in apagado são subtraídos do saldo do usuário e o ranking
-é atualizado: naonny com 10 pontos e 1 check-in.
+Ao apagar o check-in, o saldo do usuário diminui os 10 pontos dele e a contagem
+diminui 1 check-in. No exemplo da API, naonny passa de 20 pontos e 2 check-ins
+para 10 pontos e 1 check-in.
 
 ## Resultado atual
 
@@ -39,21 +41,25 @@ Os pontos do check-in apagado são subtraídos do saldo do usuário e o ranking
 - Interface: ao apagar check-ins como Admin, a pontuação do ranking não
   diminuiu (exploração, linha 19).
 
+## Consequência
+
+Usuários mantêm pontos de check-ins que não existem mais, e o ranking deixa de
+refletir a atividade real da temporada.
+
+## Análise técnica
+
+Pelo comportamento observado, a rota de exclusão remove o registro do check-in,
+mas não atualiza a tabela de pontos (saldo e contagem). A correção deve subtrair
+os pontos do check-in apagado e reduzir a contagem na mesma operação da
+exclusão.
+
 ## Observações
 
-- O ranking ficou inconsistente com os check-ins que existem. Depois da
-  exclusão, o naonny não tem mais nenhum check-in, mas aparece com 20 pontos e
-  2 check-ins.
+- Depois da exclusão, a listagem de check-ins não tem mais nenhum check-in do
+  naonny, mas o ranking mantém 20 pontos e 2 check-ins.
 - A listagem de check-ins mostrava 2 do Lucas e 2 da Maria, enquanto o ranking
-  contabiliza 4 e 3 check-ins (40 e 30 pontos). Indício de que exclusões
-  anteriores também não foram descontadas.
-- Consequência: usuários mantêm pontos de check-ins que não existem mais.
-
-## Análise de causa raiz (hipótese)
-
-A rota de exclusão remove o registro do check-in, mas não atualiza a
-tabela de pontos (saldo e contagem). Hipótese a confirmar no código do
-controller/service de check-ins, que não foi lido nesta auditoria.
+  contabiliza 4 e 3 check-ins (40 e 30 pontos). É um indício de que as
+  exclusões anteriores também não foram descontadas.
 
 ## Evidências
 
@@ -63,4 +69,5 @@ controller/service de check-ins, que não foi lido nesta auditoria.
 - ![Ranking antes, parte 2](../evidencias/PTS-03-api-ranking-antes-2.png)
 - ![DELETE como Admin](../evidencias/API-07-apagar-checkin-admin.png)
 - ![Check-in apagado retorna 404](../evidencias/API-08-checkin-apagado-404.png)
-- ![Ranking depois](../evidencias/PTS-03-api-ranking-depois.png)
+- ![Ranking depois, parte 1](../evidencias/PTS-03-api-ranking-depois.png)
+- ![Ranking depois, parte 2](../evidencias/PTS-03-api-ranking-depois-2.png)

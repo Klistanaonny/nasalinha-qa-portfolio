@@ -5,15 +5,17 @@
 - **Caso de teste:** CT-PTS-06
 - **Localização:** Backend (regra de criação de check-in)
 - **Ambiente:** localhost, Docker Compose, NaSalinha (Node.js + PostgreSQL)
-- **Data:** 06/11/2026
+- **Data:** 07/11/2026
 - **Severidade:** Maior (erro de lógica em regra de negócio)
+- **Status:** Aberto
 
 ## Passos para reproduzir
 
-1. Em http://localhost:3000, entrar como Pedro (pedro@example.com, Trainee).
+1. Em http://localhost:3000, entrar com um usuário comum (no print, a conta
+   naonny).
 2. Fazer um check-in com uma foto.
 3. Sem esperar, fazer um segundo check-in.
-4. Abrir o ranking e conferir os pontos do Pedro.
+4. Abrir a tela inicial e o ranking e conferir os check-ins e os pontos.
 
 ## Resultado esperado
 
@@ -22,26 +24,26 @@ por dia, com intervalo mínimo de 24 horas entre eles.
 
 ## Resultado atual
 
-O segundo check-in é aceito e os pontos são somados ao saldo do usuário.
+O segundo check-in é aceito, com a mensagem "Check-in realizado com sucesso!".
+Na tela inicial, a conta naonny aparece com dois check-ins feitos às 02:13 e
+às 02:14 de 07/11, ambos aprovados e com +10 pontos cada, somando 20 pontos.
 
 ## Consequência
 
 Um usuário pode repetir check-ins sem limite e acumular pontos, o que
 distorce o ranking e a competição da temporada.
 
+## Análise técnica
+
+Pelo comportamento observado, o endpoint de criação de check-in grava um novo
+registro sem consultar o último check-in do usuário. A correção deve recusar o
+check-in quando o usuário já tiver feito um nos últimos 24 horas ou no mesmo dia.
+
 ## Observações
 
-- A versão pela API (POST /api/checkins duas vezes seguidas) não foi executada.
-  O comportamento foi comprovado pela interface.
-- Relacionado: a "Temporada 2025.1" está ativa com data final em 30/06/2025
-  (ver observações em 02-execucao-api.md).
-
-## Análise de causa raiz (hipótese)
-
-O endpoint de criação de check-in parece não consultar o último check-in do
-usuário antes de gravar um novo. Hipótese a confirmar no código do
-controller/service de check-ins, que não foi lido nesta auditoria.
+- O mesmo comportamento foi verificado na exploração, com o usuário Pedro: o
+  segundo check-in feito logo em seguida foi aceito (linha 12).
 
 ## Evidências
 
-- ![Check-ins seguidos do mesmo usuário](../evidencias/PTS-01-checkins-repetidos.png)
+- ![Dois check-ins da mesma conta com um minuto de diferença, ambos aprovados](../evidencias/CHK-02-foto-repetida.png)

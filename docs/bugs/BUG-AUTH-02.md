@@ -7,6 +7,7 @@
 - **Ambiente:** localhost, Docker Compose, Mailtrap (Sandbox)
 - **Data:** 07/11/2026
 - **Severidade:** Maior (fluxo de ativação da conta não implementado)
+- **Status:** Aberto
 
 ## Passos para reproduzir
 
@@ -24,18 +25,24 @@ E-mail com um código de verificação único, para o usuário ativar a conta
 O e-mail recebido é uma mensagem de boas-vindas ("Sua conta foi criada com
 sucesso") com um botão "Fazer Login". Não há nenhum código de verificação.
 
-## Análise de causa raiz (hipótese)
+## Consequência
 
-O template de e-mail enviado no cadastro parece ser o de boas-vindas, e o código
-de verificação não é gerado nem incluído. Hipótese a confirmar no código do
-serviço de e-mail, que não foi lido nesta auditoria.
+Não há como ativar a conta, porque o usuário nunca recebe um código para
+confirmar. Sem esse fluxo, o sistema libera o acesso sem verificação
+(BUG-AUTH-01).
+
+## Análise técnica
+
+Pelo comportamento observado, o e-mail enviado no cadastro é o de boas-vindas e
+o código de verificação não é gerado nem incluído na mensagem. A correção deve
+gerar um código único no cadastro, enviá-lo por e-mail e manter a conta como
+PENDENTE até a confirmação.
 
 ## Observações
 
 - Não existe, na interface, campo para digitar um código de verificação.
-- Consequência: não há como ativar a conta, e o sistema libera o acesso sem
-  verificação (ver BUG-AUTH-01).
+- O envio de e-mails está funcionando: a mensagem chega à caixa do Mailtrap.
 
 ## Evidências
 
-- ![E-mail recebido após o cadastro](../evidencias/AUTH-03-email-de-confirmacao.png)
+- ![E-mail recebido após o cadastro (sem código de verificação)](../evidencias/AUTH-03-email-de-confirmacao.png)
