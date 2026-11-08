@@ -1,6 +1,6 @@
 # Execução dos testes de API (Insomnia)
 
-Data: 07/11/2026. Ambiente: localhost, Docker Compose.
+Datas: 07/11/2026 e 08/11/2026. Ambiente: localhost, Docker Compose.
 Resultado: Pass (passou), Fail (falhou) ou N/E (não executado).
 
 | # | Caso | Requisição no Insomnia | Esperado | Obtido | Resultado | Bug |
@@ -17,9 +17,9 @@ Resultado: Pass (passou), Fail (falhou) ou N/E (não executado).
 | 10 | CT-CHK-06 | PUT /api/checkins/:id (check-in da Maria, como Pedro) | 403 ou 404 | 403 | Pass | |
 | 11 | CT-PTS-05 (via API) | GET /api/rankings | ordem decrescente de pontos | 40, 30, 20, 0 (decrescente) | Pass | |
 | 12 | CT-PTS-04 | DELETE /api/checkins/:id (Admin) | 200 ou 204 | 200 "Check-in deletado com sucesso" | Pass | |
-| 13 | CT-PTS-04 | GET /api/rankings depois do DELETE | naonny com 10 pontos e 1 check-in | igual ao de antes: 20 pontos e 2 check-ins | Fail | BUG-PTS-01 |
-| 14 | CT-PTS-04 | GET /api/checkins/:id do check-in apagado | 404 | (preencher) | (preencher) | |
-| 15 | CT-AUT-06 | POST /api/seasons (token do Pedro, Body {}) | 403 | (preencher) | (preencher) | |
+| 13 | CT-PTS-04 | GET /api/rankings depois do DELETE | o usuário do check-in apagado com 10 pontos e 1 check-in | igual ao de antes: 20 pontos e 2 check-ins | Fail | BUG-PTS-01 |
+| 14 | CT-PTS-04 | GET /api/checkins/:id do check-in apagado | 404 | 404 "Check-in não encontrado" | Pass | |
+| 15 | CT-AUT-06 | POST /api/seasons (token do Pedro, Body {}) | 403 | 403 "Sem permissão para acessar este recurso" | Pass | |
 | 16 | CT-ADHOC-01 | GET /api-docs (navegador) | página Swagger | 404 "Rota não encontrada" | Fail | BUG-DOC-01 |
 | 17 | CT-PTS-06 | POST /api/checkins duas vezes seguidas | segundo recusado (RF-09) | Não executado pela API. Comprovado pela interface | N/E | BUG-PTS-02 |
 
@@ -38,8 +38,9 @@ Resultado: Pass (passou), Fail (falhou) ou N/E (não executado).
 - O README do backend diz que o ranking é atualizado ao aprovar check-ins,
   mas os pontos entram na criação (check-in já nasce aprovado).
 - O README cita o arquivo `postman_NaSalinha.json`. Conferir se existe no projeto.
-- Check-ins ligados à "Temporada 2025.1", com a data atual em novembro de 2026.
-  Conferir na tela de Temporadas (como Admin) se ela é a ativa.
+- A "Temporada 2025.1" está ativa (isActive true, 10 pontos por check-in), mas a
+  data final é 30/06/2025 e a data atual é novembro de 2026. Check-ins estão
+  sendo aceitos fora do período da temporada (GET /api/seasons).
 - Rate limiting de 100 requisições a cada 15 minutos. Se passar do limite:
   `docker compose restart backend`.
 - Token de acesso vale 1 hora.
