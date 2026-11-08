@@ -21,10 +21,9 @@ E-mail com um código de verificação único, para o usuário ativar a conta
 
 ## Resultado atual
 
-Status 200 com 5 check-ins, todos de outros usuários e nenhum do Pedro:
-2 de "Maria Santos" (maria@example.com), 2 de "Lucas Silva"
-(lucas@example.com) e 1 de "naonny" (teste2@example.com). Cada item expõe
-e-mail e ID do dono.
+O e-mail recebido é uma mensagem de boas-vindas ("Sua conta foi criada com
+sucesso") com um botão "Fazer Login". Não há nenhum código de verificação.
+
 ## Análise de causa raiz (hipótese)
 
 O template de e-mail enviado no cadastro parece ser o de boas-vindas, e o código
