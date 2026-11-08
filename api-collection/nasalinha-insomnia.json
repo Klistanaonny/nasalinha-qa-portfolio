@@ -1,0 +1,1766 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v13.4.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 8.907,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5001/api/seasons",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer TOKEN_AQUI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 403,
+					"statusText": "Forbidden",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "97"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 08 Nov 2026 03:29:16 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794109394"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "70"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"46-qE282SrUtYzcUWIEVKiDlnd5ZIA\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 70,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":false,\"message\":\"Sem permissão para acessar este recurso\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 8.907,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CT-AUT-06 Pedro tenta criar temporada"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 15.302,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:5001/api/checkins/33307ed3-b831-4036-bd75-046ef9794858",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer TOKEN_AQUI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "89"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 08 Nov 2026 00:32:55 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794098591"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "58"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"3a-hJSeyL17sFXOUztWauA4he3Y3jQ\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 58,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":true,\"message\":\"Check-in deletado com sucesso\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 15.302,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CT-PTS-04 Apagar check-in (Admin)"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 5.195,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/checkins",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer TOKEN_AQUI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 401,
+					"statusText": "Unauthorized",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "88"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 08 Nov 2026 00:36:57 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794098591"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "57"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"39-aTRDfVhgWdpB6Fbhi1W0Jb/t2xI\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 57,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":false,\"message\":\"Token inválido ou expirado\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.195,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CT-CHK-05 Listar check-ins como Pedro"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 18.426000000000002,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/rankings",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer TOKEN_AQUI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "85"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 08 Nov 2026 00:40:38 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794098591"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "1846"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"736-d6xS34NgT49ngVEZmrW3zLsYvQ0\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 1846,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":true,\"data\":[{\"id\":\"623a0114-01c9-4bfc-9286-d7216f8ea277\",\"totalPoints\":40,\"checkInsCount\":4,\"createdAt\":\"2026-11-06T04:44:21.895Z\",\"updatedAt\":\"2026-11-07T04:09:52.279Z\",\"userId\":\"a2e25082-eb28-4f27-a0e3-4cf8f6922fad\",\"seasonId\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"user\":{\"id\":\"a2e25082-eb28-4f27-a0e3-4cf8f6922fad\",\"name\":\"Lucas Silva\",\"email\":\"lucas@example.com\",\"role\":\"MEMBER\"},\"season\":{\"id\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"name\":\"Temporada 2025.1\"}},{\"id\":\"2fa8f19f-efbf-47c2-a449-3b35e5478f9f\",\"totalPoints\":30,\"checkInsCount\":3,\"createdAt\":\"2026-11-06T04:44:21.898Z\",\"updatedAt\":\"2026-11-07T04:11:34.906Z\",\"userId\":\"8a7315bc-3191-436e-9189-7268f2f9a6d2\",\"seasonId\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"user\":{\"id\":\"8a7315bc-3191-436e-9189-7268f2f9a6d2\",\"name\":\"Maria Santos\",\"email\":\"maria@example.com\",\"role\":\"MEMBER\"},\"season\":{\"id\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"name\":\"Temporada 2025.1\"}},{\"id\":\"71cfa661-7989-4bc8-97ed-1f5ea1154e59\",\"totalPoints\":20,\"checkInsCount\":2,\"createdAt\":\"2026-11-07T05:13:08.965Z\",\"updatedAt\":\"2026-11-07T05:14:20.280Z\",\"userId\":\"26918975-88af-4eee-bae0-d2dcb1e11f0d\",\"seasonId\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"user\":{\"id\":\"26918975-88af-4eee-bae0-d2dcb1e11f0d\",\"name\":\"naonny\",\"email\":\"teste2@example.com\",\"role\":\"MEMBER\"},\"season\":{\"id\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"name\":\"Temporada 2025.1\"}},{\"id\":\"f43f5603-5ae0-442e-8d28-d816412671ed\",\"totalPoints\":0,\"checkInsCount\":0,\"createdAt\":\"2026-11-06T04:44:21.900Z\",\"updatedAt\":\"2026-11-06T04:44:21.900Z\",\"userId\":\"5e94c579-14f8-4bf1-9089-1c06eb26e1dd\",\"seasonId\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"user\":{\"id\":\"5e94c579-14f8-4bf1-9089-1c06eb26e1dd\",\"name\":\"Pedro Costa\",\"email\":\"pedro@example.com\",\"role\":\"TRAINEE\"},\"season\":{\"id\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"name\":\"Temporada 2025.1\"}}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 18.426000000000002,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CT-PTS-02 Ranking antes"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 12.631,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/checkins/33307ed3-b831-4036-bd75-046ef9794858",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer TOKEN_AQUI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 404,
+					"statusText": "Not Found",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "93"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 08 Nov 2026 03:31:26 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794109394"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "54"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"36-0qLj4PhZWruNPV7D8l+vUB4o4Po\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 54,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":false,\"message\":\"Check-in não encontrado\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 12.631,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CT-PTS-04 Confirmar exclusão"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 24.840999999999998,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/api/checkins/69d3c236-ab62-4957-86e4-977fba721d37",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Authorization",
+							"value": "Bearer TOKEN_AQUI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "99"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 07 Nov 2026 20:23:51 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794083932"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "582"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"246-qF1kQD0P9RbeeXDCaez5LSXJ6AA\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 582,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":true,\"data\":{\"id\":\"69d3c236-ab62-4957-86e4-977fba721d37\",\"photoUrl\":\"https://res.cloudinary.com/zhycgdr3/image/upload/v1794024653/checkins/z5zbb7sdmw4px1ip6hy0.jpg\",\"points\":10,\"status\":\"APPROVED\",\"notes\":null,\"createdAt\":\"2026-11-07T04:10:53.531Z\",\"updatedAt\":\"2026-11-07T04:10:53.531Z\",\"userId\":\"8a7315bc-3191-436e-9189-7268f2f9a6d2\",\"seasonId\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"user\":{\"id\":\"8a7315bc-3191-436e-9189-7268f2f9a6d2\",\"name\":\"Maria Santos\",\"email\":\"maria@example.com\"},\"season\":{\"id\":\"f451a21b-53cf-4012-9c28-9e9d2159e2ea\",\"name\":\"Temporada 2025.1\"}}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 24.840999999999998,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CT-CHK-06 Ver check-in da Maria (por ID)"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 10.966,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:5001/api/checkins/69d3c236-ab62-4957-86e4-977fba721d37",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Authorization",
+							"value": "Bearer TOKEN_AQUI"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "   {\"notes\": \"editado pelo Pedro\"}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 403,
+					"statusText": "Forbidden",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "96"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 08 Nov 2026 00:14:43 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794097643"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "70"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"46-qE282SrUtYzcUWIEVKiDlnd5ZIA\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 70,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":false,\"message\":\"Sem permissão para acessar este recurso\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 10.966,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CT-CHK-06 Editar check-in da Maria (PUT)"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 57.906,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5001/api/auth/register",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "   {\"name\": \"Teste API\", \"email\": \"teste3@example.com\", \"password\": \"senha123\"}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "96"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 07 Nov 2026 19:25:44 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794079918"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "644"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"284-c+xeJaKvMqA1eBwgIKcQcBt0f+U\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 644,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":true,\"message\":\"Usuário registrado com sucesso\",\"data\":{\"user\":{\"id\":\"7717f41e-5fdc-4222-a845-20914eba7adb\",\"name\":\"Teste API\",\"email\":\"teste3@example.com\",\"role\":\"MEMBER\",\"createdAt\":\"2026-11-07T19:25:44.879Z\"},\"accessToken\":\"TOKEN_AQUI\",\"refreshToken\":\"TOKEN_AQUI\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 57.906,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CT-AUT-02 Cadastro"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 54.067,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5001/api/auth/login",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "   {\"email\": \"admin@nasalinha.com\", \"password\": \"senha123\"}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "94"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 08 Nov 2026 03:31:16 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794109394"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "605"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"25d-ZgGL/MGnlWmpjOJJ+BBAHfFGPHY\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 605,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":true,\"message\":\"Login realizado com sucesso\",\"data\":{\"user\":{\"id\":\"3b73f2ae-e83f-4a44-a806-dae87358c469\",\"name\":\"Admin Sistema\",\"email\":\"admin@nasalinha.com\",\"role\":\"ADMIN\"},\"accessToken\":\"TOKEN_AQUI\",\"refreshToken\":\"TOKEN_AQUI\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 54.067,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Login Admin válido"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 75.369,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5001/api/auth/login",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "   {\"email\": \"pedro@example.com\", \"password\": \"senha123\"}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "98"
+						},
+						{
+							"name": "Date",
+							"value": "Sun, 08 Nov 2026 03:28:20 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794109394"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "603"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"25b-RLiN7EgOZDQ0NlkrYQa0l+sEqo0\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 603,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":true,\"message\":\"Login realizado com sucesso\",\"data\":{\"user\":{\"id\":\"5e94c579-14f8-4bf1-9089-1c06eb26e1dd\",\"name\":\"Pedro Costa\",\"email\":\"pedro@example.com\",\"role\":\"TRAINEE\"},\"accessToken\":\"TOKEN_AQUI\",\"refreshToken\":\"TOKEN_AQUI\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 75.369,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Login Pedro (Trainee)"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 53.698,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:5001/api/auth/login",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "   {\"email\": \"teste3@example.com\", \"password\": \"senha123\"}"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "95"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 07 Nov 2026 19:28:29 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794079918"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "601"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"259-YyJnEq+rpMbhanTzzGbN4sJhB4w\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 601,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"success\":true,\"message\":\"Login realizado com sucesso\",\"data\":{\"user\":{\"id\":\"7717f41e-5fdc-4222-a845-20914eba7adb\",\"name\":\"Teste API\",\"email\":\"teste3@example.com\",\"role\":\"MEMBER\"},\"accessToken\":\"TOKEN_AQUI\",\"refreshToken\":\"TOKEN_AQUI\"}}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 53.698,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "CT-AUT-04 Login sem verificar"
+			},
+			{
+				"startedDateTime": "2026-11-08T04:08:15.708Z",
+				"time": 26.226,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:5001/health",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"name": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"name": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"name": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"name": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"name": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"name": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"name": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"name": "Vary",
+							"value": "Origin"
+						},
+						{
+							"name": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"value": "97"
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 07 Nov 2026 19:01:17 GMT"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"value": "1794078664"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "91"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"5b-mUHPLLlWvNSaSRrsS2dbsvmlUCg\""
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 91,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"status\":\"ok\",\"message\":\"NaSalinha API is running\",\"timestamp\":\"2026-11-07T19:01:17.951Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 26.226,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "00 Health check"
+			}
+		]
+	}
+}
